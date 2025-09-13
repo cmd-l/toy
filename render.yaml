@@ -5,6 +5,3 @@ services:
     pythonVersion: 3.10
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn structure:app
-    envVars:
-      - key: DASH_ENV
-        value: production
