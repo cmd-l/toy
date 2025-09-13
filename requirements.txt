@@ -1,4 +1,4 @@
 dash
 pymatgen
-crystal_toolkit
+crystal-toolkit
 gunicorn
