@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     cargo \
  && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /structure
+WORKDIR /app
 
 COPY . .
 
