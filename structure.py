@@ -8,7 +8,7 @@ import crystal_toolkit.components as ctc
 app = dash.Dash(__name__)
 server = app.server
 
-structure = CifParser("CsBeBr3_hss_uc_10_final.cif").parse_structures(primitive=False)
+structure = CifParser("CsPbBr3_sc_vc_relax_final.cif").parse_structures(primitive=False)
 
 structure_component = ctc.StructureMoleculeComponent(structure[0], id="visualize")
 
