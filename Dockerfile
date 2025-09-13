@@ -2,12 +2,20 @@ FROM python:3.10-slim
 
 RUN apt-get update && apt-get install -y \
     build-essential \
+    rustc \
+    cargo \
     curl \
     git \
     libffi-dev \
-    rustc \
-    cargo \
- && rm -rf /var/lib/apt/lists/*
+    libssl-dev \
+    libjpeg-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    zlib1g-dev \
+    libblas-dev \
+    liblapack-dev \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /structure
 
