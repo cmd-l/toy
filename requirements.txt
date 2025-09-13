@@ -1,6 +1,5 @@
 dash
 pymatgen
-jupyterlab
-crystal-toolkit
 crystaltoolkit-extension
+crystal-toolkit
 gunicorn
