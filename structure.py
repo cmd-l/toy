@@ -1,0 +1,21 @@
+import dash
+from dash import html
+from pymatgen.core import Lattice, Structure,Species
+from pymatgen.io.cif import CifParser
+
+import crystal_toolkit.components as ctc
+from crystal_toolkit.settings import SETTINGS
+
+app = dash.Dash(assets_folder=SETTINGS.ASSETS_PATH)
+
+structure = CifParser("CsBeBr3_hss_uc_10_final.cif").parse_structures(primitive=False)
+
+structure_component = ctc.StructureMoleculeComponent(structure[0], id="visualize")
+
+layout = html.Div([structure_component.layout()])
+
+ctc.register_crystal_toolkit(app=app, layout=layout)
+
+
+if __name__ == "__main__":
+    app.run_server(debug=True)

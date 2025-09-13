@@ -1,0 +1,4 @@
+dash
+pymatgen
+crystal_toolkit
+gunicorn
