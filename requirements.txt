@@ -1,8 +1,11 @@
---upgrade pip
 setuptools
 wheel
-dash
-pymatgen
-crystaltoolkit-extension
-crystal-toolkit
+dash==2.14.2
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-mp-components==0.4.44
+dash-table==5.0.0
+pymatgen==2024.10.3
+crystal-toolkit==2023.11.3
+crystaltoolkit-extension==0.6.0
 gunicorn
