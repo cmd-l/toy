@@ -19,4 +19,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8020
 
-CMD ["gunicorn", "app:server", "--bind", "0.0.0.0:8020", "--workers", "1"]
+CMD ["gunicorn", "structure:server", "--bind", "0.0.0.0:8020", "--workers", "1"]
