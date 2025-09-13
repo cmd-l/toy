@@ -19,17 +19,12 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /structure
 
-# Copy files
 COPY . .
 
-# Upgrade pip etc.
 RUN pip install --upgrade pip setuptools wheel
 
-# Install Python dependencies
 RUN pip install -r requirements.txt
 
-# Expose port
 EXPOSE 8020
 
-# Run the app
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8020", "--workers", "1"]
+CMD ["gunicorn", "structure:app", "--bind", "0.0.0.0:8020", "--workers", "1"]
