@@ -1,3 +1,5 @@
+setuptools
+wheel
 dash
 pymatgen
 crystaltoolkit-extension
